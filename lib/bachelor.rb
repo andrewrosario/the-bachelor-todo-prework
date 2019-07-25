@@ -5,7 +5,7 @@ def get_first_name_of_season_winner(data, season)
       # puts "Key is #{key} and Value is #{value}"
       if key == "status" && value == "Winner"
         name = data[season][index]['name'].split
-        name[0]
+        return name[0]
       end
     end
   end
