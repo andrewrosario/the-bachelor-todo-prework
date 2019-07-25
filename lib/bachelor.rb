@@ -58,5 +58,5 @@ def get_average_age_for_season(data, season)
   data[season].each_with_index do |contestant, index|
     ages << data[season][index]['age']
   end
-  puts ages.class
+  return (ages.sum/ages.length)
 end
