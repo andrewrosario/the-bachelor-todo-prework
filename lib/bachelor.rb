@@ -4,7 +4,8 @@ def get_first_name_of_season_winner(data, season)
     contestant.each do |key, value|
       # puts "Key is #{key} and Value is #{value}"
       if key == "status" && value == "Winner"
-        puts data[season][index]['name']
+        name = data[season][index]['name'].split
+        return name[0]
       end
     end
   end
