@@ -13,6 +13,14 @@ end
 
 def get_contestant_name(data, occupation)
   # code here
+  data.each do |key, value|
+    data[key].each_with_index do |contestant, index|
+      contestant.each do |key, value|
+        if key == "occupation" && value == occupation
+          return data[key][index]['name']
+      end
+    end
+  end
 end
 
 def count_contestants_by_hometown(data, hometown)
