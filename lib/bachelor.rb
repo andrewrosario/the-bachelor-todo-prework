@@ -59,5 +59,5 @@ def get_average_age_for_season(data, season)
     ages << data[season][index]['age'].to_f
   end
   puts "#{ages}, sum #{ages.sum}, number #{ages.length}"
-  return (ages.sum/ages.length).to_i
+  return (ages.sum/ages.length).round
 end
