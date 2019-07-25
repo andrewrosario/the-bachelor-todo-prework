@@ -2,7 +2,7 @@ def get_first_name_of_season_winner(data, season)
   # code here
   data[season].each_with_index do |contestant, index|
     contestant.each do |key, value|
-      puts "Key is #{key} and Value is #{value}"
+      # puts "Key is #{key} and Value is #{value}"
       if key == "status" && value == "Winner"
         puts data[season][index]['name']
       end
