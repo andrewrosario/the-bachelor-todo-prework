@@ -54,4 +54,9 @@ end
 
 def get_average_age_for_season(data, season)
   # code here
+  ages = []
+  data[season].each_with_index do |contestant, index|
+    ages << data[season][index]['age']
+  end
+  puts ages
 end
