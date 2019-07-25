@@ -15,8 +15,8 @@ def get_contestant_name(data, occupation)
   # code here
   data.each do |key, value|
     data[key].each_with_index do |contestant, index|
-      contestant.each do |key, value|
-        if key == "occupation" && value == occupation
+      contestant.each do |key2, value|
+        if key2 == "occupation" && value == occupation
           return data[key][index]['name']
         end
       end
